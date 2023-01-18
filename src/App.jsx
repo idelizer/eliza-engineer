@@ -8,16 +8,15 @@ function App() {
   return (
     <div className="App">
       <div>
-       
+        <img src="/src/assets/headshot.jpg" id="headshot"></img>
       </div>
-      <h1>Eliza's website coming soon</h1>
+      <h1>Eliza Cantwell</h1>
+      <h2>Software Engineer</h2>
+      <p>elizaofthebay@gmail.com | (510) 725-9999 | Bay Area, CA</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          poke me {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
     </div>
   )

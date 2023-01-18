@@ -17,6 +17,12 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+#headshot {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
