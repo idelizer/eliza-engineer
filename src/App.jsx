@@ -20,50 +20,55 @@ function App() {
         </button>
 
         <a href="https://www.linkedin.com/in/eliza-cantwell/">
-          <SiLinkedin />
+          <SiLinkedin class="icon"/>
         </a> 
 
-        <a href="https://github.com/idelizer">
-          <SiGithub />
+        <a href="https://github.com/idelizer" >
+          <SiGithub class="icon"/>
         </a> 
 
         <a href="https://www.python.org/">
-          <SiPython />
+          <SiPython class="icon"/>
         </a> 
 
         <a href="https://www.javascript.com/">
-          <SiJavascript />
+          <SiJavascript class="icon"/>
         </a> 
 
-        <SiCss3 />
-        <SiHtml5 />
+        <span>
+          <SiCss3 class="icon"/>
+        </span>
+
+        <span>
+          <SiHtml5 class="icon"/>
+        </span>
 
         <a href="https://www.postgresql.org/">
-          <SiPostgresql />
+          <SiPostgresql class="icon"/>
         </a> 
 
         <a href="https://flask.palletsprojects.com/en/2.2.x/">
-          <SiFlask />
+          <SiFlask class="icon"/>
         </a> 
 
         <a href="https://reactjs.org/">
-          <SiReact />
+          <SiReact class="icon"/>
         </a> 
 
         <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-          <SiJinja />
+          <SiJinja class="icon"/>
         </a> 
 
         <a href="https://getbootstrap.com/">
-          <SiBootstrap />
+          <SiBootstrap class="icon"/>
         </a> 
 
         <a href="https://git-scm.com/">
-          <SiGit />
+          <SiGit class="icon"/>
         </a> 
 
         <a href="https://id.heroku.com/">
-          <SiHeroku />
+          <SiHeroku class="icon"/>
         </a>
       </div>
     </div>
