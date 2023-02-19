@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <img src="/src/assets/headshot.jpg" id="headshot"></img>
+        <img src="src/assets/headshot.jpg" id="headshot"></img>
       </div>
       {/* Intro */}
       <h1>Hi, I'm Eliza.</h1>
@@ -26,6 +26,33 @@ function App() {
       </a> 
       {/* <p>elizaofthebay@gmail.com | (510) 725-9999 | Bay Area, CA</p> */}
       {/* Projects */}
+      <h1>Technologies</h1>
+      <SiPython class="icon"/>
+      <SiJavascript class="icon"/>
+      <SiCss3 class="icon"/>
+      <SiHtml5 class="icon"/>
+      <a href="https://git-scm.com/">
+        <SiGit class="icon"/>
+      </a> 
+      <a href="https://reactjs.org/">
+          <SiReact class="icon"/>
+        </a> 
+      <a href="https://getbootstrap.com/">
+        <SiBootstrap class="icon"/>
+      </a> 
+      <a href="https://www.postgresql.org/">
+        <SiPostgresql class="icon"/>
+      </a> 
+      <a href="https://id.heroku.com/">
+        <SiHeroku class="icon"/>
+      </a>
+      <a href="https://flask.palletsprojects.com/en/2.2.x/">
+        <SiFlask class="icon"/>
+      </a> 
+      <a href="https://jinja.palletsprojects.com/en/3.1.x/">
+        <SiJinja class="icon"/>
+      </a> 
+
       <h1>Projects</h1>
 
       <h2>Breadventure</h2>
@@ -37,29 +64,7 @@ function App() {
       <h3>Insight</h3>
       <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
       
-      <SiPython class="icon"/>
-      <SiJavascript class="icon"/>
-      <SiCss3 class="icon"/>
-      <SiHtml5 class="icon"/>
-      <a href="https://git-scm.com/">
-        <SiGit class="icon"/>
-      </a> 
-      <a href="https://getbootstrap.com/">
-        <SiBootstrap class="icon"/>
-      </a> 
-      <a href="https://www.postgresql.org/">
-        <SiPostgresql class="icon"/>
-      </a> 
-      <a href="https://id.heroku.com/">
-        <SiHeroku class="icon"/>
-      </a>
 
-      <a href="https://flask.palletsprojects.com/en/2.2.x/">
-        <SiFlask class="icon"/>
-      </a> 
-      <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-        <SiJinja class="icon"/>
-      </a> 
 
 
 
@@ -79,21 +84,25 @@ function App() {
       {/* Contact */}
       <h1>Contact</h1>
 
+
+      <form action="#" name="contact_form">
+        <label for="first_name">First Name</label>
+        <input name="first_name" type="text" required placeholder="John"/>
+        <label for="last_name">Last Name</label>
+        <input name="last_name" type="text" required placeholder="Doe"/>
+        <label for="email">Email</label>
+        <input name="email" type="email" required placeholder="you@domain.com"/>
+        <label for="message">Message</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+  
+        <input type="submit" value="Submit"></input>       
+
+      </form>	
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           poke me {count}
         </button>
-
-
-
-
-
-
-
-        <a href="https://reactjs.org/">
-          <SiReact class="icon"/>
-        </a> 
-
 
 
       </div>
