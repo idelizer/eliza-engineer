@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <img src="src/assets/headshot.jpg" id="headshot"></img>
+        <img src="assets/headshot.jpg" id="headshot"></img>
       </div>
       {/* Intro */}
       <h1>Hi, I'm Eliza.</h1>
