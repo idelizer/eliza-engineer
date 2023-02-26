@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import headshot from './assets/headshot.jpg'
 import breadventure from './assets/breadventurelogo.svg'
 import marquee from './assets/iconmarquee.svg'
+import camp from './assets/LarkLogo.svg'
 import { SiBootstrap, SiCss3, SiFlask, SiGit, SiGithub, SiHeroku, SiHtml5, SiJavascript, SiJinja, SiLinkedin, SiPostgresql, SiPython, SiReact } from '/node_modules/react-icons/si';
 import './App.css'
 
@@ -69,7 +70,7 @@ function App() {
       
       <h2>Camphoric</h2>
       <a href='https://github.com/camphoric'>
-        <img src={marquee} class="icon"></img>
+        <img src={camp} class="icon"></img>
       </a>
       <p>Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
       <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
@@ -81,30 +82,10 @@ function App() {
       <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
       {/* Contact */}
       <h1>Contact</h1>
+      <h2>elizaofthebay@gmail.com</h2>
 
-
-      <form action="#" name="contact_form">
-        <label for="first_name">First Name</label>
-        <input name="first_name" type="text" required placeholder="John"/>
-        <label for="last_name">Last Name</label>
-        <input name="last_name" type="text" required placeholder="Doe"/>
-        <label for="email">Email</label>
-        <input name="email" type="email" required placeholder="you@domain.com"/>
-        <label for="message">Message</label>
-        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
-  
-        <input type="submit" value="Submit"></input>       
-
-      </form>	
-
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          poke me {count}
-        </button>
-
-
-      </div>
     </div>
+
   )
 }
 
