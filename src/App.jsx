@@ -16,6 +16,11 @@ function App() {
         <img src={headshot} id="headshot"></img>
       </div>
       {/* Intro */}
+
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+
       <h1>Hi, I'm Eliza.</h1>
       <h2>Full-Stack Software Engineer</h2>
       <p>
