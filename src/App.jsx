@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import icon from './assets/icon.svg'
 import headshot from './assets/headshot.jpg'
 import breadventure from './assets/breadventurelogo.svg'
 import marquee from './assets/iconmarquee.svg'
@@ -7,14 +7,27 @@ import camp from './assets/LarkLogo.svg'
 import { SiBootstrap, SiCss3, SiFlask, SiGit, SiGithub, SiHeroku, SiHtml5, SiJavascript, SiJinja, SiLinkedin, SiPostgresql, SiPython, SiReact } from '/node_modules/react-icons/si';
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
+      <nav class="relative flex w-full flex-wrap items-center justify-between bg-neutral-100 py-3 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600">
+        <div class="flex w-full flex-wrap items-center justify-between px-6">
+          <a class="mt-2 mr-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mt-0" href="/">
+            <img src={icon} class="icon" alt="Eliza Icon" loading="lazy"></img>
+          </a>
+          <div>
+            <a class="text-xl text-neutral-800 dark:text-neutral-200" href="#">About</a>
+          </div>
+        </div>
+      </nav>
+      <br />
       <div>
         <img src={headshot} id="headshot"></img>
       </div>
+
       {/* Intro */}
 
       <h1 className="text-3xl font-bold underline">

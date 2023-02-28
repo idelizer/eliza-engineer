@@ -12,7 +12,8 @@
   color: rgba(67, 66, 66, 0.87);
 
   background-image: url(/src/assets/landscape_upscaled_extended.jpg);
-  background-size: cover; 
+  background-size: cover;
+  background-color: #cbfaf8; 
   /* background-blend-mode: overlay; */
   /* background-image: linear-gradient(rgb(180, 232, 255), rgb(255, 255, 179)) */
 
