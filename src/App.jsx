@@ -15,17 +15,36 @@ function App() {
     <div className="App">
 
       {/* Nav Bar */}
-      <nav class="relative flex w-full flex-wrap items-center justify-between bg-neutral-100 py-3 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600">
-        <div class="flex w-full flex-wrap items-center justify-between px-6">
-          <a class="mt-2 mr-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mt-0" href="/">
-            <img src={icon} class="icon" alt="Eliza" loading="lazy"></img>
-          </a>
-          <div>
-            <a class="text-xl text-neutral-800 dark:text-neutral-200" href="#">About</a>
-          </div>
+      <header class="shadow-lg">
+        <div class="container mx-auto flex h-20">
+          <nav class="relative w-full flex flex-wrap contents">
+            <a href="/" class="flex items-center justify-end">
+              <img class="h-14" src={icon} alt="Eliza" />
+            </a>
+            <div class="flex w-full flex-wrap items-center justify-end">
+              <a href="" class="px-3">
+                <span>Home</span>
+              </a>
+              <a href="" class="px-3">
+                <span>About</span>
+              </a>
+              <a href="" class="px-3">
+                <span>Tech</span>
+              </a>
+              <a href="" class="px-3">
+                <span>Projects</span>
+              </a>
+              <a href="" class="px-3">
+                <span>Hobbies</span>
+              </a>
+              <button>
+                Dark
+              </button>
+            </div>
+          </nav>
         </div>
-      </nav>
-
+      </header>
+    
       <br />
 
       {/* Intro and Headshot */}
@@ -57,8 +76,6 @@ function App() {
           <SiGithub class="icon"/>
         </a> 
       </div>
-      
-      {/* <p>elizaofthebay@gmail.com | (510) 725-9999 | Bay Area, CA</p> */}
       
       <br />
 
