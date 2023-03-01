@@ -11,7 +11,7 @@
   color-scheme: light dark;
   color: rgba(67, 66, 66, 0.87);
 
-  background-image: url(/src/assets/landscape_upscaled_extended.jpg);
+  /* background-image: url(/src/assets/landscape_upscaled_extended.jpg); */
   background-size: cover;
   background-color: #cbfaf8; 
   /* background-blend-mode: overlay; */
@@ -47,6 +47,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
 h1 {
