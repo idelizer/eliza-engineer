@@ -125,40 +125,53 @@ function App() {
         <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
 
           <div class="relative rounded overflow-hidden shadow-lg group">
-            <img src={breadventure} class="icon w-full group-hover:blur-[2px] transition-all duration-200 ease-out" alt="Breadventure"></img>
-            <h2 class="group-hover:blur-[4px]">Breadventure</h2>
+            <a href="http://breadventure.eliza.engineer/">
+              <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
+            </a>
+            <a href='https://github.com/idelizer/breadventure'>
+              <SiGithub class="icon w-full transition-all duration-200 ease-out" />
+            </a>
+            <h2>Breadventure</h2>
             <p class="group-hover:blur-[4px]">Breadventure is a WebApp that tracks your experiments with bread-making and sourdough starters. I built the backend and frontend with Flask, PostgreSQL, and the Cloudinary and Spoonacular APIs. It was deployed via Heroku. This app was the capstone project of Hackbright Academy. </p>
+            
             <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
               <h3>Insight</h3>
               <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
-              <a href='https://github.com/idelizer/breadventure'>Github</a>
             </div>
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg group">
-            <img src={camp} class="icon w-full group-hover:blur-[2px] transition-all duration-200 ease-out" alt="Camphoric"></img>
+              <img src={camp} class="icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
+              <a href='https://github.com/camphoric'>
+                <SiGithub class="icon w-full transition-all duration-200 ease-out" />
+              </a>
             <div>
-              <h2 class="group-hover:blur-[4px]">Camphoric</h2>
+              <h2>Camphoric</h2>
               <h3 class="group-hover:blur-[4px]">Description</h3>
               <p class="group-hover:blur-[4px]">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
+              
               <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
                 <h3>Insight</h3>
                 <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
-                <a href='https://github.com/camphoric'>Github</a>
               </div>
    
             </div>
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg group">
-            <img src={marquee} class="icon w-full group-hover:blur-[2px] transition-all duration-200 ease-out" alt="Marquee"></img>
-            <h2 class="group-hover:blur-[4px]">Marquee</h2>
+            <a href="https://marquee.eliza.engineer/">
+              <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
+            </a>
+            <a href='https://github.com/idelizer/marquee'>
+              <SiGithub class="icon w-full transition-all duration-200 ease-out" />
+            </a>
+            <h2>Marquee</h2>
             <h3 class="group-hover:blur-[4px]">Description</h3>
             <p class="group-hover:blur-[4px]">description</p>
+            
             <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
               <h3>Insight</h3>
               <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
-              <a href='https://github.com/idelizer/marquee'>Github</a>
             </div>
           </div>
         </div>
