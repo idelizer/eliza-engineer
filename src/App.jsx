@@ -15,7 +15,7 @@ function App() {
     <div className="App">
 
       {/* Nav Bar */}
-      <header class="shadow-lg">
+      <header class="shadow-lg sticky top-0 z-50 bg-white">
         <div class="container mx-auto flex h-20">
           <nav class="relative w-full flex flex-wrap contents">
             <a href="/" class="flex items-center justify-end">
@@ -25,17 +25,20 @@ function App() {
               <a href="" class="px-3">
                 <span>Home</span>
               </a>
-              <a href="" class="px-3">
+              <a href="#about" class="px-3">
                 <span>About</span>
               </a>
-              <a href="" class="px-3">
+              <a href="#tech" class="px-3">
                 <span>Tech</span>
               </a>
-              <a href="" class="px-3">
+              <a href="#projects" class="px-3">
                 <span>Projects</span>
               </a>
-              <a href="" class="px-3">
+              <a href="#hobbies" class="px-3">
                 <span>Hobbies</span>
+              </a>
+              <a href="#contact" class="px-3">
+                <span>Contact</span>
               </a>
               <button>
                 Dark
@@ -63,6 +66,7 @@ function App() {
 
       {/* About */}
       <div>
+        <h1 id="about">About</h1>
         <p>
           As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
         </p>
@@ -80,7 +84,7 @@ function App() {
       <br />
 
       {/* Technologies */}
-      <h1>Technologies</h1>
+      <h1 id="tech">Technologies</h1>
 
       <p>Tech Name</p>
       <div class="grid grid-cols-11">
@@ -118,7 +122,7 @@ function App() {
       <br />
 
       {/* Projects */}
-      <h1>Projects</h1>
+      <h1 id="projects">Projects</h1>
 
       <div class="card">
         <img src={breadventure} class="icon" alt="Breadventure"></img>
@@ -157,8 +161,11 @@ function App() {
 
       <br />
 
+      {/* Hobbies */}
+      <h1 id="hobbies">Hobbies</h1>
+
       {/* Contact */}
-      <h1>Contact</h1>
+      <h1 id="contact">Contact</h1>
       <h2>elizaofthebay@gmail.com</h2>
 
     </div>
