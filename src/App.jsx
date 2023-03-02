@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import icon from './assets/icon.svg'
-import headshot from './assets/headshot.jpg'
+import headshot from './assets/headshot.svg'
 import breadventure from './assets/breadventurelogo.svg'
 import marquee from './assets/iconmarquee.svg'
 import camp from './assets/LarkLogo.svg'
@@ -51,10 +51,9 @@ function App() {
       <br />
 
       {/* Intro and Headshot */}
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-2 place-items-center">
         <div>
           <h1>Hi, I'm Eliza.</h1>
-          <h2>Full-Stack Software Engineer</h2>
         </div>
 
         <div>
@@ -67,54 +66,66 @@ function App() {
       {/* About */}
       <div>
         <h1 id="about">About</h1>
-        <p>
-          As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
-        </p>
+        <div class="grid grid-cols-2 gap-6 place-items-center py-10">
+          <div class="w-2/3">
+              <p>
+                As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
+              </p>
+            </div>
+          <div class="w-1/3 grid grid-rows-2">
+            <div>
+              <p>Eliza Cantwell</p>
+              <p>Full-Stack Software Engineer</p>
+              <p>Bay Area, California</p>
+            </div>
+            <div class="grid grid-cols-2 place-items-center py-6">
+              <a href="https://www.linkedin.com/in/eliza-cantwell/">
+                  <SiLinkedin class="icon"/>
+              </a> 
+              <a href="https://github.com/idelizer" >
+                <SiGithub class="icon"/>
+              </a> 
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-2">
-        <a href="https://www.linkedin.com/in/eliza-cantwell/">
-            <SiLinkedin class="icon"/>
-        </a> 
-        <a href="https://github.com/idelizer" >
-          <SiGithub class="icon"/>
-        </a> 
-      </div>
-      
       <br />
 
       {/* Technologies */}
-      <h1 id="tech">Technologies</h1>
+      <div>
+        <h1 id="tech">Technologies</h1>
 
-      <p>Tech Name</p>
-      <div class="grid grid-cols-11">
-        <SiPython class="icon"/>
-        <SiJavascript class="icon"/>
-        <SiCss3 class="icon"/>
-        <SiHtml5 class="icon"/>
-        <a href="https://git-scm.com/">
-          <SiGit class="icon"/>
-        </a> 
-        <a href="https://reactjs.org/">
-          <SiReact class="icon"/>
-        </a> 
-        <a href="https://getbootstrap.com/">
-          <SiBootstrap class="icon"/>
-        </a> 
-        <a href="https://www.postgresql.org/">
-          <SiPostgresql class="icon"/>
-        </a> 
-        <a href="https://id.heroku.com/">
-          <SiHeroku class="icon"/>
-        </a>
-        <a href="https://flask.palletsprojects.com/en/2.2.x/">
-          <SiFlask class="icon"/>
-        </a> 
-        <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-          <SiJinja class="icon"/>
-        </a> 
-
+          <div class="grid grid-cols-11 p-10 place-items-center">
+            <SiPython class="icon group hover:bg-black"/>
+            <SiJavascript class="icon"/>
+            <SiCss3 class="icon"/>
+            <SiHtml5 class="icon"/>
+            <a href="https://git-scm.com/">
+              <SiGit class="icon"/>
+            </a> 
+            <a href="https://reactjs.org/">
+              <SiReact class="icon"/>
+            </a> 
+            <a href="https://getbootstrap.com/">
+              <SiBootstrap class="icon"/>
+            </a> 
+            <a href="https://www.postgresql.org/">
+              <SiPostgresql class="icon"/>
+            </a> 
+            <a href="https://id.heroku.com/">
+              <SiHeroku class="icon"/>
+            </a>
+            <a href="https://flask.palletsprojects.com/en/2.2.x/">
+              <SiFlask class="icon"/>
+            </a> 
+            <a href="https://jinja.palletsprojects.com/en/3.1.x/">
+              <SiJinja class="icon"/>
+            </a> 
+          <span class="group-hover:text-white">I am experienced with </span>
+        </div>
       </div>
+   
 
       <br />
 
@@ -122,7 +133,7 @@ function App() {
       <div>
         <h1 id="projects">Projects</h1>
 
-        <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5 py-10">
 
           <div class="relative rounded overflow-hidden shadow-lg group">
             <a href="http://breadventure.eliza.engineer/">
