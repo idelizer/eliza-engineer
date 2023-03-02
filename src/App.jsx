@@ -72,11 +72,11 @@ function App() {
                 As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
               </p>
             </div>
-          <div class="w-1/3 grid grid-rows-2">
+          <div class="w-2/3 grid grid-rows-2">
             <div>
-              <p>Eliza Cantwell</p>
-              <p>Full-Stack Software Engineer</p>
-              <p>Bay Area, California</p>
+              <p class="text-2xl">Eliza Cantwell</p>
+              <p class="text-xl">Full-Stack Software Engineer</p>
+              <p class="text-xl">Bay Area, California</p>
             </div>
             <div class="grid grid-cols-2 place-items-center py-6">
               <a href="https://www.linkedin.com/in/eliza-cantwell/">
@@ -95,34 +95,37 @@ function App() {
       {/* Technologies */}
       <div>
         <h1 id="tech">Technologies</h1>
-
-          <div class="grid grid-cols-11 p-10 place-items-center">
-            <SiPython class="icon group hover:bg-black"/>
-            <SiJavascript class="icon"/>
-            <SiCss3 class="icon"/>
-            <SiHtml5 class="icon"/>
-            <a href="https://git-scm.com/">
-              <SiGit class="icon"/>
-            </a> 
-            <a href="https://reactjs.org/">
-              <SiReact class="icon"/>
-            </a> 
-            <a href="https://getbootstrap.com/">
-              <SiBootstrap class="icon"/>
-            </a> 
-            <a href="https://www.postgresql.org/">
-              <SiPostgresql class="icon"/>
-            </a> 
-            <a href="https://id.heroku.com/">
-              <SiHeroku class="icon"/>
-            </a>
-            <a href="https://flask.palletsprojects.com/en/2.2.x/">
-              <SiFlask class="icon"/>
-            </a> 
-            <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-              <SiJinja class="icon"/>
-            </a> 
-          <span class="group-hover:text-white">I am experienced with </span>
+        <div class="pointer-events-none p-10 grid grid-rows-2 place-items-center">
+          <div class="peer">
+            <span class="">I am experienced with </span>
+          </div>
+          <div class="grid grid-cols-11 gap-6">
+              <SiPython class="icon group pointer-events-auto hover:bg-black"/>
+              <SiJavascript class="icon"/>
+              <SiCss3 class="icon"/>
+              <SiHtml5 class="icon"/>
+              <a href="https://git-scm.com/">
+                <SiGit class="icon"/>
+              </a> 
+              <a href="https://reactjs.org/">
+                <SiReact class="icon"/>
+              </a> 
+              <a href="https://getbootstrap.com/">
+                <SiBootstrap class="icon"/>
+              </a> 
+              <a href="https://www.postgresql.org/">
+                <SiPostgresql class="icon"/>
+              </a> 
+              <a href="https://id.heroku.com/">
+                <SiHeroku class="icon"/>
+              </a>
+              <a href="https://flask.palletsprojects.com/en/2.2.x/">
+                <SiFlask class="icon"/>
+              </a> 
+              <a href="https://jinja.palletsprojects.com/en/3.1.x/">
+                <SiJinja class="icon"/>
+              </a> 
+          </div>
         </div>
       </div>
    
@@ -192,7 +195,10 @@ function App() {
       <br />
 
       {/* Hobbies */}
-      <h1 id="hobbies">Hobbies</h1>
+      <div>
+        <h1 id="hobbies">Hobbies</h1>
+        <span class="">When I am not coding, I love to </span>
+      </div>
 
       {/* Contact */}
       <h1 id="contact">Contact</h1>
