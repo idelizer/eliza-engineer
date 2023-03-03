@@ -5,6 +5,8 @@ import headshot from './assets/headshot.svg'
 import breadventure from './assets/breadventurelogo.svg'
 import marquee from './assets/iconmarquee.svg'
 import camp from './assets/LarkLogo.svg'
+import leafleft from './assets/leafleft.svg'
+import leafright from './assets/leafright.svg' 
 import { SiBootstrap, SiCss3, SiFlask, SiGit, SiGithub, SiHeroku, SiHtml5, SiJavascript, SiJinja, SiLinkedin, SiPostgresql, SiPython, SiReact } from '/node_modules/react-icons/si';
 import './App.css'
 
@@ -116,7 +118,11 @@ function App() {
 
       {/* About */}
       <div>
-        <h1 id="about">About</h1>
+        <div class="flex flex-row-3 justify-center">
+            <img src={ leafleft } class="icon"></img>
+            <h1 id="about" class="mx-2">About</h1>
+            <img src={ leafright } class="icon"></img>
+        </div>
         <div class="grid grid-cols-2 gap-6 place-items-center py-10">
           <div class="w-2/3">
               <p>
@@ -145,19 +151,24 @@ function App() {
 
       {/* Technologies */}
       <div>
-        <h1 id="tech">Technologies</h1>
+        <div class="flex flex-row-3 justify-center">
+            <img src={ leafleft } class="icon"></img>
+            <h1 id="tech" class="mx-2">Technologies</h1>
+            <img src={ leafright } class="icon"></img>
+        </div>
         <HoverIcons />
       </div>
    
-
       <br />
 
       {/* Projects */}
       <div>
-        <h1 id="projects">Projects</h1>
-
+        <div class="flex flex-row-3 justify-center">
+            <img src={ leafleft } class="icon"></img>
+            <h1 id="projects" class="mx-2">Projects</h1>
+            <img src={ leafright } class="icon"></img>
+        </div>
         <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5 py-10">
-
           <div class="relative rounded overflow-hidden shadow-lg group">
             <a href="http://breadventure.eliza.engineer/">
               <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
@@ -215,17 +226,25 @@ function App() {
       <br />
 
       {/* Hobbies */}
-      <div>
+      {/* <div>
         <h1 id="hobbies">Hobbies</h1>
         <span class="">When I am not coding, I love to </span>
-      </div>
+      </div> */}
 
       {/* Contact */}
-      <h1 id="contact">Contact</h1>
-      <h2>elizaofthebay@gmail.com</h2>
+      <div>
+        <div class="flex flex-row-3 justify-center">
+            <img src={ leafleft } class="icon"></img>
+            <h1 id="contact" class="mx-2">Contact</h1>
+            <img src={ leafright } class="icon"></img>
+        </div>
+        <div class="py-10">
+          <h2>elizaofthebay@gmail.com</h2>
+        </div>
+      </div>
+
 
     </div>
-
   )
 }
 
