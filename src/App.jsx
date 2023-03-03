@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { render } from "react-dom";
 import icon from './assets/icon.svg'
 import headshot from './assets/headshot.svg'
 import breadventure from './assets/breadventurelogo.svg'
@@ -7,6 +8,51 @@ import camp from './assets/LarkLogo.svg'
 import { SiBootstrap, SiCss3, SiFlask, SiGit, SiGithub, SiHeroku, SiHtml5, SiJavascript, SiJinja, SiLinkedin, SiPostgresql, SiPython, SiReact } from '/node_modules/react-icons/si';
 import './App.css'
 
+// Render all icons and 
+function HoverIcons() {
+  const [techText, setTechText] = useState("");
+
+  // Arrow function returns another arrow function; currying or partial application
+  const hoverText = text => () => setTechText(text);
+
+  return (
+    <div class="p-10 grid grid-rows-2 place-items-center">
+      <div class="peer">
+        <span id= "experience" class="">I am experienced with </span>
+        <span>{techText}</span>
+      </div>
+      <div class="grid grid-cols-11 gap-6">
+        <SiPython class="icon" onMouseEnter={ hoverText("Python") }/>
+        <SiJavascript class="icon" onMouseEnter={ hoverText("Javascript") }/>
+        <SiCss3 class="icon" onMouseEnter={ hoverText("CSS") }/>
+        <SiHtml5 class="icon" onMouseEnter={ hoverText("HTML") }/>
+        <a href="https://git-scm.com/">
+          <SiGit class="icon" onMouseEnter={ hoverText("Git") }/>
+        </a> 
+        <a href="https://reactjs.org/">
+          <SiReact class="icon" onMouseEnter={ hoverText("React") }/>
+        </a> 
+        <a href="https://getbootstrap.com/">
+          <SiBootstrap class="icon" onMouseEnter={ hoverText("Bootstrap") }/>
+        </a> 
+        <a href="https://www.postgresql.org/">
+          <SiPostgresql class="icon" onMouseEnter={ hoverText("PostgreSQL") }/>
+        </a> 
+        <a href="https://id.heroku.com/">
+          <SiHeroku class="icon" onMouseEnter={ hoverText("Heroku") }/>
+        </a>
+        <a href="https://flask.palletsprojects.com/en/2.2.x/">
+          <SiFlask class="icon" onMouseEnter={ hoverText("Flask") }/>
+        </a> 
+        <a href="https://jinja.palletsprojects.com/en/3.1.x/">
+          <SiJinja class="icon" onMouseEnter={ hoverText("Jinja") }/>
+        </a> 
+      </div>
+    </div>
+  );
+  
+
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -95,38 +141,7 @@ function App() {
       {/* Technologies */}
       <div>
         <h1 id="tech">Technologies</h1>
-        <div class="pointer-events-none p-10 grid grid-rows-2 place-items-center">
-          <div class="peer">
-            <span class="">I am experienced with </span>
-          </div>
-          <div class="grid grid-cols-11 gap-6">
-              <SiPython class="icon group pointer-events-auto hover:bg-black"/>
-              <SiJavascript class="icon"/>
-              <SiCss3 class="icon"/>
-              <SiHtml5 class="icon"/>
-              <a href="https://git-scm.com/">
-                <SiGit class="icon"/>
-              </a> 
-              <a href="https://reactjs.org/">
-                <SiReact class="icon"/>
-              </a> 
-              <a href="https://getbootstrap.com/">
-                <SiBootstrap class="icon"/>
-              </a> 
-              <a href="https://www.postgresql.org/">
-                <SiPostgresql class="icon"/>
-              </a> 
-              <a href="https://id.heroku.com/">
-                <SiHeroku class="icon"/>
-              </a>
-              <a href="https://flask.palletsprojects.com/en/2.2.x/">
-                <SiFlask class="icon"/>
-              </a> 
-              <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-                <SiJinja class="icon"/>
-              </a> 
-          </div>
-        </div>
+        <HoverIcons />
       </div>
    
 
