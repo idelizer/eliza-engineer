@@ -16,11 +16,11 @@ function HoverIcons() {
 
   // Arrow function returns another arrow function; currying or partial application
   const hoverText = text => () => setTechText(text);
-  const resetText = () => setTechText("");
+  const resetText = () => setTechText("$YOUR_TOOL");
 
   return (
     <div class="p-10 grid grid-rows-2 place-items-center">
-      <div class="grid grid-cols-11 gap-6">
+      <div class="grid grid-cols-11 gap-6 py-6">
         <SiPython class="icon" onMouseEnter={ hoverText("Python") } onMouseLeave={ resetText }/>
         <SiJavascript class="icon" onMouseEnter={ hoverText("Javascript") } onMouseLeave={ resetText }/>
         <SiCss3 class="icon" onMouseEnter={ hoverText("CSS") } onMouseLeave={ resetText }/>
@@ -47,11 +47,11 @@ function HoverIcons() {
           <SiJinja class="icon" onMouseEnter={ hoverText("Jinja") } onMouseLeave={ resetText }/>
         </a> 
       </div>
-      <div class="grid grid-cols-2 gap-3 pt-10">
-        <div>
+      <div class="grid grid-cols-2 gap-3 bg-white rounded py-2 px-4">
+        <div class="">
           <span>I am experienced with</span>
         </div>
-        <div class="text-left">
+        <div class="text-left ">
           <span>{ techText }</span>
         </div>
       </div>
@@ -87,9 +87,9 @@ function App() {
               <a href="#projects" class="px-3">
                 <span>Projects</span>
               </a>
-              <a href="#hobbies" class="px-3">
+              {/* <a href="#hobbies" class="px-3">
                 <span>Hobbies</span>
-              </a>
+              </a> */}
               <a href="#contact" class="px-3">
                 <span>Contact</span>
               </a>
@@ -117,7 +117,7 @@ function App() {
       <br />
 
       {/* About */}
-      <div>
+      <div class="mt-20">
         <div class="flex flex-row-3 justify-center">
             <img src={ leafleft } class="icon"></img>
             <h1 id="about" class="mx-2">About</h1>
@@ -168,6 +168,7 @@ function App() {
             <h1 id="projects" class="mx-2">Projects</h1>
             <img src={ leafright } class="icon"></img>
         </div>
+        
         <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5 py-10">
           <div class="relative rounded overflow-hidden shadow-lg group">
             <a href="http://breadventure.eliza.engineer/">
@@ -192,10 +193,10 @@ function App() {
               </a>
             <div>
               <h2>Camphoric</h2>
-              <h3 class="group-hover:blur-[4px]">Description</h3>
-              <p class="group-hover:blur-[4px]">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
+              <h3 class="group-hover:blur-[100px]">Description</h3>
+              <p class="group-hover:blur-[100px]">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
               
-              <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+              <div class="inset-0 static flex flex-col justify-end opacity-0 scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
                 <h3>Insight</h3>
                 <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
               </div>
@@ -208,20 +209,29 @@ function App() {
               <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
             </a>
             <a href='https://github.com/idelizer/marquee'>
-              <SiGithub class="icon w-full transition-all duration-200 ease-out" />
+              <SiGithub class="icon w-full" />
             </a>
             <h2>Marquee</h2>
-            <h3 class="group-hover:blur-[4px]">Description</h3>
-            <p class="group-hover:blur-[4px]">description</p>
-            
-            <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-              <h3>Insight</h3>
-              <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+            <div class="">
+
+              <div class="group-hover:hidden ">
+                <h3 class="group-hover:blur-[4px]">Description</h3>
+                <p class="group-hover:blur-[4px]">description</p>              </div>
+              <div class="hidden group-hover:flex transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+                <h3>Insight</h3>
+
+                <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+              </div>
+{/*               
+              <div class="absolute inset-x-0 bottom-0 p-5 bg-black/5 opacity-0 scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out">
+              </div> */}
             </div>
           </div>
         </div>
       </div>
       
+      {/* <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out"> */}
+
 
       <br />
 
