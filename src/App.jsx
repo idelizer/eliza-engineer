@@ -19,7 +19,7 @@ function HoverIcons() {
   const resetText = () => setTechText("$YOUR_TOOL");
 
   return (
-    <div class="p-10 grid grid-rows-2 place-items-center">
+    <div class="grid grid-rows-2 place-items-center mt-10">
       <div class="grid grid-cols-11 gap-6 py-6">
         <SiPython class="icon" onMouseEnter={ hoverText("Python") } onMouseLeave={ resetText }/>
         <SiJavascript class="icon" onMouseEnter={ hoverText("Javascript") } onMouseLeave={ resetText }/>
@@ -108,7 +108,7 @@ function App() {
             <h1 id="about" class="mx-2">About</h1>
             <img src={ leafright } class="icon"></img>
         </div>
-        <div class="grid grid-cols-2 gap-6 place-items-center py-10">
+        <div class="grid grid-cols-2 gap-6 place-items-center my-10">
           <div class="w-2/3">
               <p>
                 As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
@@ -133,7 +133,7 @@ function App() {
       </div>
 
       {/* Technologies */}
-      <div>
+      <div class="mt-20">
         <div class="flex flex-row-3 justify-center">
             <img src={ leafleft } class="icon"></img>
             <h1 id="tech" class="mx-2">Technologies</h1>
@@ -143,15 +143,15 @@ function App() {
       </div>
    
       {/* Projects */}
-      <div>
+      <div class="mt-20">
         <div class="flex flex-row-3 justify-center">
             <img src={ leafleft } class="icon"></img>
             <h1 id="projects" class="mx-2">Projects</h1>
             <img src={ leafright } class="icon"></img>
         </div>
         
-        <div class="p-10 grid sm:grid-cols-1 md:grid-cols-3 gap-5 py-10">
-          <div class="relative rounded overflow-hidden shadow-lg group">
+        <div class="mx-10">
+          <div class="relative rounded overflow-hidden shadow-lg mt-10 group">
             <a href="http://breadventure.eliza.engineer/">
               <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
             </a>
@@ -167,7 +167,7 @@ function App() {
             </a>
           </div>
 
-          <div class="relative rounded overflow-hidden shadow-lg group">
+          <div class="relative rounded overflow-hidden shadow-lg mt-10 group ">
               <img src={camp} class="icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
             <div>
               <h2 class="text-2xl">Camphoric</h2>
@@ -184,7 +184,7 @@ function App() {
             </div>
           </div>
 
-          <div class="relative rounded overflow-hidden shadow-lg group">
+          <div class="relative rounded overflow-hidden shadow-lg mt-10 group">
             <div class="p-5">
               <a href="https://marquee.eliza.engineer/">
                 <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
@@ -212,7 +212,7 @@ function App() {
       </div> */}
 
       {/* Contact */}
-      <div>
+      <div class="mt-20 mb-10">
         <div class="flex flex-row-3 justify-center">
             <img src={ leafleft } class="icon"></img>
             <h1 id="contact" class="mx-2">Contact</h1>
