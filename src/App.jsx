@@ -68,7 +68,7 @@ function App() {
     <div className="App">
 
       {/* Nav Bar */}
-      <header class="shadow-lg sticky top-0 z-50 bg-white">
+      <header class="shadow-lg top-0 z-50 bg-white">
         <div class="container mx-auto flex h-20">
           <nav class="relative w-full flex flex-wrap contents">
             <a href="/" class="flex items-center justify-end">
@@ -248,7 +248,7 @@ function App() {
             <h1 id="contact" class="mx-2">Contact</h1>
             <img src={ leafright } class="icon"></img>
         </div>
-        <div class="py-10">
+        <div class="py-10 text-2xl">
           <h2>elizaofthebay@gmail.com</h2>
         </div>
       </div>
