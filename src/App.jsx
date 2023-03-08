@@ -47,11 +47,11 @@ function HoverIcons() {
           <SiJinja class="icon" onMouseEnter={ hoverText("Jinja") } onMouseLeave={ resetText }/>
         </a> 
       </div>
-      <div class="grid grid-cols-2 gap-3 bg-white rounded py-2 px-4">
+      <div class="grid grid-cols-2 bg-white rounded py-2 px-4 text-xl">
         <div class="">
-          <span>I am experienced with</span>
+          <span>I am experienced with:</span>
         </div>
-        <div class="text-left ">
+        <div class="font-bold">
           <span>{ techText }</span>
         </div>
       </div>
@@ -91,7 +91,7 @@ function App() {
         </div>
     
       {/* Intro and Headshot */}
-      <div class="grid grid-cols-2 place-items-center">
+      <div class="grid grid-cols-2 place-items-center mt-10">
         <div>
           <h1>Hi, I'm Eliza.</h1>
         </div>
