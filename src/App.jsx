@@ -68,41 +68,28 @@ function App() {
     <div className="App">
 
       {/* Nav Bar */}
-      <header class="shadow-lg top-0 z-50 bg-white">
-        <div class="container mx-auto flex h-20">
-          <nav class="relative w-full flex flex-wrap contents">
-            <a href="/" class="flex items-center justify-end">
-              <img class="h-14" src={icon} alt="Eliza" />
-            </a>
-            <div class="flex w-full flex-wrap items-center justify-end">
-              <a href="" class="px-3">
-                <span>Home</span>
-              </a>
-              <a href="#about" class="px-3">
-                <span>About</span>
-              </a>
-              <a href="#tech" class="px-3">
-                <span>Tech</span>
-              </a>
-              <a href="#projects" class="px-3">
-                <span>Projects</span>
-              </a>
-              {/* <a href="#hobbies" class="px-3">
-                <span>Hobbies</span>
-              </a> */}
-              <a href="#contact" class="px-3">
-                <span>Contact</span>
-              </a>
-              <button>
-                Dark
-              </button>
-            </div>
-          </nav>
+        <div class="shadow-lg top-0 bg-white relative">
+          <div class="flex justify-end mx-20 h-20">
+              <div class="flex items-center mr-auto">
+                <img src={ leafleft } class="h-14"></img>
+                <a href="/" class="flex items-center">
+                  <img src={icon} class="h-14" alt="Eliza" />
+                </a>
+              </div>
+              <div class="flex items-center gap-9">
+                <a href="" class="text-xl hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#about" class="text-xl hover:text-cyan-400 transition-colors">About</a>
+                <a href="#tech" class="text-xl hover:text-cyan-400 transition-colors">Tech</a>
+                <a href="#projects" class="text-xl hover:text-cyan-400 transition-colors">Projects</a>
+                {/* <a href="#hobbies" class="text-xl hover:text-cyan-400 transition-colors">Hobbies</a> */}
+                <a href="#contact" class="text-xl hover:text-cyan-400 transition-colors">Contact</a>
+                {/* <button>
+                  Dark
+                </button> */}
+              </div>
+          </div>
         </div>
-      </header>
     
-      <br />
-
       {/* Intro and Headshot */}
       <div class="grid grid-cols-2 place-items-center">
         <div>
@@ -113,8 +100,6 @@ function App() {
           <img src={headshot} id="headshot"></img>
         </div>
       </div>
-
-      <br />
 
       {/* About */}
       <div class="mt-20">
@@ -147,8 +132,6 @@ function App() {
         </div>
       </div>
 
-      <br />
-
       {/* Technologies */}
       <div>
         <div class="flex flex-row-3 justify-center">
@@ -159,8 +142,6 @@ function App() {
         <HoverIcons />
       </div>
    
-      <br />
-
       {/* Projects */}
       <div>
         <div class="flex flex-row-3 justify-center">
@@ -174,25 +155,22 @@ function App() {
             <a href="http://breadventure.eliza.engineer/">
               <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
             </a>
-            <a href='https://github.com/idelizer/breadventure'>
-              <SiGithub class="icon w-full transition-all duration-200 ease-out" />
-            </a>
-            <h2>Breadventure</h2>
+            <h2 class="text-2xl">Breadventure</h2>
             <p class="group-hover:blur-[4px]">Breadventure is a WebApp that tracks your experiments with bread-making and sourdough starters. I built the backend and frontend with Flask, PostgreSQL, and the Cloudinary and Spoonacular APIs. It was deployed via Heroku. This app was the capstone project of Hackbright Academy. </p>
             
-            <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
+            <div class="inset-0 absolute p-5 flex flex-col justify-end opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
               <h3>Insight</h3>
               <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
             </div>
+            <a href='https://github.com/idelizer/breadventure'>
+              <SiGithub class="icon inline transition-all duration-200 ease-out" />
+            </a>
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg group">
               <img src={camp} class="icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
-              <a href='https://github.com/camphoric'>
-                <SiGithub class="icon w-full transition-all duration-200 ease-out" />
-              </a>
             <div>
-              <h2>Camphoric</h2>
+              <h2 class="text-2xl">Camphoric</h2>
               <h3 class="group-hover:blur-[100px]">Description</h3>
               <p class="group-hover:blur-[100px]">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
               
@@ -200,40 +178,32 @@ function App() {
                 <h3>Insight</h3>
                 <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
               </div>
-   
+              <a href='https://github.com/camphoric'>
+                <SiGithub class="icon inline transition-all duration-200 ease-out" />
+              </a>
             </div>
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg group">
-            <a href="https://marquee.eliza.engineer/">
-              <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
-            </a>
-            <a href='https://github.com/idelizer/marquee'>
-              <SiGithub class="icon w-full" />
-            </a>
-            <h2>Marquee</h2>
-            <div class="">
-
-              <div class="group-hover:hidden ">
-                <h3 class="group-hover:blur-[4px]">Description</h3>
-                <p class="group-hover:blur-[4px]">description</p>              </div>
-              <div class="hidden group-hover:flex transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-                <h3>Insight</h3>
-
-                <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
-              </div>
-{/*               
-              <div class="absolute inset-x-0 bottom-0 p-5 bg-black/5 opacity-0 scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out">
-              </div> */}
+            <div class="p-5">
+              <a href="https://marquee.eliza.engineer/">
+                <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
+              </a>
+              <h2 class="text-2xl">Marquee</h2>
+              <h3 class="">Description</h3>
+              <p class="">description</p>              
+              <h3>Insight</h3>
+              <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+              <a href='https://github.com/idelizer/marquee'>
+                  <SiGithub class="icon inline transition-all duration-200 ease-out" />
+              </a>
             </div>
+
           </div>
         </div>
       </div>
       
       {/* <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out"> */}
-
-
-      <br />
 
       {/* Hobbies */}
       {/* <div>
