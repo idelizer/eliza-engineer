@@ -19,32 +19,40 @@ function HoverIcons() {
   const resetText = () => setTechText("$YOUR_TOOL");
 
   return (
-    <div class="grid grid-rows-2 place-items-center mt-10">
-      <div class="grid grid-cols-11 gap-6 py-6">
-        <SiPython class="icon" onMouseEnter={ hoverText("Python") } onMouseLeave={ resetText }/>
-        <SiJavascript class="icon" onMouseEnter={ hoverText("Javascript") } onMouseLeave={ resetText }/>
-        <SiCss3 class="icon" onMouseEnter={ hoverText("CSS") } onMouseLeave={ resetText }/>
-        <SiHtml5 class="icon" onMouseEnter={ hoverText("HTML") } onMouseLeave={ resetText }/>
-        <a href="https://git-scm.com/">
-          <SiGit class="icon" onMouseEnter={ hoverText("Git") } onMouseLeave={ resetText }/>
+    <div class=" mt-10">
+      <div class="flex flex-row justify-around px-20 py-6" onMouseLeave={ resetText }>
+        <div onMouseEnter={ hoverText("Python") }>
+          <SiPython class="icon"/>
+        </div>
+        <div onMouseEnter={ hoverText("Javascript")}>
+          <SiJavascript class="icon"/>
+        </div>
+        <div onMouseEnter={ hoverText("CSS") }>
+          <SiCss3 class="icon"/>
+        </div>
+        <div onMouseEnter={ hoverText("HTML") }>
+          <SiHtml5 class="icon"/>
+        </div>
+        <a href="https://git-scm.com/" onMouseEnter={ hoverText("Git") }>
+          <SiGit class="icon"/>
         </a> 
-        <a href="https://reactjs.org/">
-          <SiReact class="icon" onMouseEnter={ hoverText("React") } onMouseLeave={ resetText }/>
+        <a href="https://reactjs.org/" onMouseEnter={ hoverText("React") }>
+          <SiReact class="icon"/>
         </a> 
-        <a href="https://getbootstrap.com/">
-          <SiBootstrap class="icon" onMouseEnter={ hoverText("Bootstrap") } onMouseLeave={ resetText }/>
+        <a href="https://getbootstrap.com/" onMouseEnter={ hoverText("Bootstrap") }>
+          <SiBootstrap class="icon"/>
         </a> 
-        <a href="https://www.postgresql.org/">
-          <SiPostgresql class="icon" onMouseEnter={ hoverText("PostgreSQL") } onMouseLeave={ resetText }/>
+        <a href="https://www.postgresql.org/" onMouseEnter={ hoverText("PostgreSQL") }>
+          <SiPostgresql class="icon"/>
         </a> 
-        <a href="https://id.heroku.com/">
-          <SiHeroku class="icon" onMouseEnter={ hoverText("Heroku") } onMouseLeave={ resetText }/>
+        <a href="https://id.heroku.com/" onMouseEnter={ hoverText("Heroku") }>
+          <SiHeroku class="icon"/>
         </a>
-        <a href="https://flask.palletsprojects.com/en/2.2.x/">
-          <SiFlask class="icon" onMouseEnter={ hoverText("Flask") } onMouseLeave={ resetText }/>
+        <a href="https://flask.palletsprojects.com/en/2.2.x/" onMouseEnter={ hoverText("Flask") }>
+          <SiFlask class="icon"/>
         </a> 
-        <a href="https://jinja.palletsprojects.com/en/3.1.x/">
-          <SiJinja class="icon" onMouseEnter={ hoverText("Jinja") } onMouseLeave={ resetText }/>
+        <a href="https://jinja.palletsprojects.com/en/3.1.x/" onMouseEnter={ hoverText("Jinja") }>
+          <SiJinja class="icon"/>
         </a> 
       </div>
       <div class="grid grid-cols-2 bg-white rounded-md py-2 px-4 text-xl tracking-wide">
