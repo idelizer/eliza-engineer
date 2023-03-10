@@ -35,6 +35,12 @@ a {
   height: 70px;
 }
 
+.project-icon {
+  color: rgb(137, 137, 137);
+  width: 100px;
+  height: 100px;
+}
+
 /* a .icon:hover {
   color: rgb(173, 173, 173);
   filter: drop-shadow(1px 1px 1px rgb(137, 137, 137));
@@ -50,6 +56,7 @@ body {
 }
 
 .card {
+  background: linear-gradient(180deg, rgba(255,255,255,.4) 0%, rgba(216,255,253,1) 100%);
   /* Add shadows to create the "card" effect */
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;

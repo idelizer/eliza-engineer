@@ -150,19 +150,19 @@ function App() {
             <img src={ leafright } class="icon"></img>
         </div>
         
-        <div class="mx-10">
-          <div class="relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
+        <div class="mx-0 sm:mx-20">
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
             <div class="ml-20">
               <a href="http://breadventure.eliza.engineer/">
-                <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
+                <img src={breadventure} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
               </a>
 
-              <a href='https://github.com/idelizer/breadventure' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-[#999999] transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+              <a href='http://breadventure.eliza.engineer/' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                 {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
                 Visit  Breadventure
               </a>
 
-              <a href='https://github.com/idelizer/breadventure' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-[#999999] transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+              <a href='https://github.com/idelizer/breadventure' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                 {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
                 Github
               </a>
@@ -172,18 +172,10 @@ function App() {
               <h2 class="text-2xl my-2">Breadventure</h2>
               <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
             </div>
-
-            {/* 
-            inset-0 absolute p-5 flex flex-col justify-end opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100    
-
-            <p class="group-hover:blur-[4px]">Breadventure is a WebApp that tracks your experiments with bread-making and sourdough starters. I built the backend and frontend with Flask, PostgreSQL, and the Cloudinary and Spoonacular APIs. It was deployed via Heroku. This app was the capstone project of Hackbright Academy. </p>
-            
-
- */}
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg mt-10 group ">
-              <img src={camp} class="icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
+              <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
             <div>
               <h2 class="text-2xl">Camphoric</h2>
               <h3 class="">Description</h3>
@@ -202,7 +194,7 @@ function App() {
           <div class="relative rounded overflow-hidden shadow-lg mt-10 group p-5">
             <div class="">
               <a href="https://marquee.eliza.engineer/">
-                <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
+                <img src={marquee} class="project-icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
               </a>
               <h2 class="text-2xl">Marquee</h2>
               <h3 class="">Description</h3>
