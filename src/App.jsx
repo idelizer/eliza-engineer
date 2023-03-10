@@ -156,62 +156,54 @@ function App() {
               <a href="http://breadventure.eliza.engineer/">
                 <img src={breadventure} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
               </a>
-
               <a href='http://breadventure.eliza.engineer/' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
-                {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
-                Visit  Breadventure
+                Visit Breadventure
               </a>
-
               <a href='https://github.com/idelizer/breadventure' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                 {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
                 Github
               </a>
-
             </div>
             <div class="m-10 basis-1/2">
-              <h2 class="text-2xl my-2">Breadventure</h2>
-              <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
+              <h2 class="text-2xl">Breadventure</h2>
+              <p class="mt-6">Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
             </div>
           </div>
 
-          <div class="relative rounded overflow-hidden shadow-lg mt-10 group ">
-              <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
-            <div>
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
+            <div class="ml-20">
+              <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
+              <a href='https://github.com/camphoric' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                Github
+              </a>
+            </div>
+            <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Camphoric</h2>
-              <h3 class="">Description</h3>
-              <p class="">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
-              
-              <div class="inset-0 static flex flex-col justify-end opacity-0 scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-                <h3>Insight</h3>
-                <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
-              </div>
-              <a href='https://github.com/camphoric'>
-                <SiGithub class="icon inline transition-all duration-200 ease-out" />
-              </a>
+              <p class="mt-6">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
+              <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
             </div>
           </div>
 
-          <div class="relative rounded overflow-hidden shadow-lg mt-10 group p-5">
-            <div class="">
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
+            <div class="ml-20">
               <a href="https://marquee.eliza.engineer/">
-                <img src={marquee} class="project-icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
+                <img src={marquee} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
               </a>
-              <h2 class="text-2xl">Marquee</h2>
-              <h3 class="">Description</h3>
-              <p class="">description</p>              
-              <h3>Insight</h3>
-              <p>This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
-              <a href='https://github.com/idelizer/marquee'>
-                  <SiGithub class="icon inline transition-all duration-200 ease-out" />
+              <a href='https://marquee.eliza.engineer/' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                Visit Marquee
+              </a>
+              <a href='https://github.com/idelizer/marquee' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                Github
               </a>
             </div>
-
+            <div class="m-10 basis-1/2">
+              <h2 class="text-2xl">Marquee</h2>
+              <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+            </div>
           </div>
         </div>
       </div>
       
-      {/* <div class="inset-0 absolute p-5 flex flex-col justify-end bg-black/40 opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out"> */}
-
       {/* Hobbies */}
       {/* <div>
         <h1 id="hobbies">Hobbies</h1>
