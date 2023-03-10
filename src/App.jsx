@@ -94,41 +94,11 @@ function App() {
       <div class="grid grid-cols-2 place-items-center mt-10">
         <div>
           <h1>Hi, I'm Eliza.</h1>
+          <p>I'm a full-stack software engineer</p>
         </div>
 
         <div>
           <img src={headshot} id="headshot"></img>
-        </div>
-      </div>
-
-      {/* About */}
-      <div class="mt-20">
-        <div class="flex flex-row-3 justify-center">
-            <img src={ leafleft } class="icon"></img>
-            <h1 id="about" class="mx-2">About</h1>
-            <img src={ leafright } class="icon"></img>
-        </div>
-        <div class="grid grid-cols-2 gap-6 place-items-center my-10">
-          <div class="w-2/3">
-              <p>
-                As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
-              </p>
-            </div>
-          <div class="w-2/3 grid grid-rows-2">
-            <div>
-              <p class="text-2xl">Eliza Cantwell</p>
-              <p class="text-xl">Full-Stack Software Engineer</p>
-              <p class="text-xl">Bay Area, California</p>
-            </div>
-            <div class="grid grid-cols-2 place-items-center py-6">
-              <a href="https://www.linkedin.com/in/eliza-cantwell/">
-                  <SiLinkedin class="icon"/>
-              </a> 
-              <a href="https://github.com/idelizer" >
-                <SiGithub class="icon"/>
-              </a> 
-            </div>
-          </div>
         </div>
       </div>
 
@@ -199,6 +169,37 @@ function App() {
             <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Marquee</h2>
               <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* About */}
+      <div class="mt-20">
+        <div class="flex flex-row-3 justify-center">
+            <img src={ leafleft } class="icon"></img>
+            <h1 id="about" class="mx-2">About</h1>
+            <img src={ leafright } class="icon"></img>
+        </div>
+        <div class="grid grid-cols-2 gap-6 place-items-center my-10">
+          <div class="w-2/3">
+              <p>
+                As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
+              </p>
+            </div>
+          <div class="w-2/3 grid grid-rows-2">
+            <div>
+              <p class="text-2xl">Eliza Cantwell</p>
+              <p class="text-xl">Full-Stack Software Engineer</p>
+              <p class="text-xl">Bay Area, California</p>
+            </div>
+            <div class="grid grid-cols-2 place-items-center py-6">
+              <a href="https://www.linkedin.com/in/eliza-cantwell/">
+                  <SiLinkedin class="icon"/>
+              </a> 
+              <a href="https://github.com/idelizer" >
+                <SiGithub class="icon"/>
+              </a> 
             </div>
           </div>
         </div>
