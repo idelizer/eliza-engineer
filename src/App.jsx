@@ -20,7 +20,7 @@ function HoverIcons() {
 
   return (
     <div class="mt-10">
-      <div class="flex flex-row justify-around py-6" onMouseLeave={ resetText }>
+      <div class="flex flex-row justify-around p-6" onMouseLeave={ resetText }>
         <div onMouseEnter={ hoverText("Python") }>
           <SiPython class="icon"/>
         </div>
@@ -102,7 +102,7 @@ function App() {
         </div>
     
       {/* Intro and Headshot */}
-      <div class="grid grid-cols-2 place-items-center mt-10">
+      <div class="grid grid-cols-2 place-items-center mt-10 px-6">
         <div>
           <h1>Hi, I'm Eliza.</h1>
           <p>I'm a full-stack software engineer</p>
