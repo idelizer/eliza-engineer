@@ -47,7 +47,7 @@ function HoverIcons() {
           <SiJinja class="icon" onMouseEnter={ hoverText("Jinja") } onMouseLeave={ resetText }/>
         </a> 
       </div>
-      <div class="grid grid-cols-2 bg-white rounded py-2 px-4 text-xl">
+      <div class="grid grid-cols-2 bg-white rounded-md py-2 px-4 text-xl tracking-wide">
         <div class="">
           <span>I am experienced with:</span>
         </div>
@@ -151,28 +151,43 @@ function App() {
         </div>
         
         <div class="mx-10">
-          <div class="relative rounded overflow-hidden shadow-lg mt-10 group">
-            <a href="http://breadventure.eliza.engineer/">
-              <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
-            </a>
-            <h2 class="text-2xl">Breadventure</h2>
-            <p class="group-hover:blur-[4px]">Breadventure is a WebApp that tracks your experiments with bread-making and sourdough starters. I built the backend and frontend with Flask, PostgreSQL, and the Cloudinary and Spoonacular APIs. It was deployed via Heroku. This app was the capstone project of Hackbright Academy. </p>
-            
-            <div class="inset-0 absolute p-5 flex flex-col justify-end opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
-              <h3>Insight</h3>
+          <div class="relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
+            <div class="ml-20">
+              <a href="http://breadventure.eliza.engineer/">
+                <img src={breadventure} class="icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
+              </a>
+
+              <a href='https://github.com/idelizer/breadventure' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-[#999999] transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
+                Visit  Breadventure
+              </a>
+
+              <a href='https://github.com/idelizer/breadventure' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-[#999999] transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                {/* <SiGithub class="inline transition-all duration-200 ease-out" /> */}
+                Github
+              </a>
+
+            </div>
+            <div class="m-10 basis-1/2">
+              <h2 class="text-2xl my-2">Breadventure</h2>
               <p>Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
             </div>
-            <a href='https://github.com/idelizer/breadventure'>
-              <SiGithub class="icon inline transition-all duration-200 ease-out" />
-            </a>
+
+            {/* 
+            inset-0 absolute p-5 flex flex-col justify-end opacity-0 scale-110 group-hover:scale-100 group-hover:opacity-100    
+
+            <p class="group-hover:blur-[4px]">Breadventure is a WebApp that tracks your experiments with bread-making and sourdough starters. I built the backend and frontend with Flask, PostgreSQL, and the Cloudinary and Spoonacular APIs. It was deployed via Heroku. This app was the capstone project of Hackbright Academy. </p>
+            
+
+ */}
           </div>
 
           <div class="relative rounded overflow-hidden shadow-lg mt-10 group ">
               <img src={camp} class="icon w-full transition-all duration-200 ease-out" alt="Camphoric"></img>
             <div>
               <h2 class="text-2xl">Camphoric</h2>
-              <h3 class="group-hover:blur-[100px]">Description</h3>
-              <p class="group-hover:blur-[100px]">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
+              <h3 class="">Description</h3>
+              <p class="">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
               
               <div class="inset-0 static flex flex-col justify-end opacity-0 scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ease-out">
                 <h3>Insight</h3>
@@ -184,8 +199,8 @@ function App() {
             </div>
           </div>
 
-          <div class="relative rounded overflow-hidden shadow-lg mt-10 group">
-            <div class="p-5">
+          <div class="relative rounded overflow-hidden shadow-lg mt-10 group p-5">
+            <div class="">
               <a href="https://marquee.eliza.engineer/">
                 <img src={marquee} class="icon w-full transition-all duration-200 ease-out" alt="Marquee"></img>
               </a>
