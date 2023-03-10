@@ -19,8 +19,8 @@ function HoverIcons() {
   const resetText = () => setTechText("$YOUR_TOOL");
 
   return (
-    <div class=" mt-10">
-      <div class="flex flex-row justify-around px-20 py-6" onMouseLeave={ resetText }>
+    <div class="mt-10">
+      <div class="flex flex-row justify-around py-6" onMouseLeave={ resetText }>
         <div onMouseEnter={ hoverText("Python") }>
           <SiPython class="icon"/>
         </div>
@@ -55,14 +55,17 @@ function HoverIcons() {
           <SiJinja class="icon"/>
         </a> 
       </div>
-      <div class="grid grid-cols-2 bg-white rounded-md py-2 px-4 text-xl tracking-wide">
-        <div class="">
-          <span>I am experienced with:</span>
-        </div>
-        <div class="font-bold">
-          <span>{ techText }</span>
+      <div class="flex flex-row justify-around pt-6">
+        <div class="grid grid-cols-2 bg-white w-fit rounded-md py-2 px-4 text-xl tracking-wide">
+          <div class="text-right">
+            <span>I am experienced with:</span>
+          </div>
+          <div class="font-bold px-4">
+            <span>{ techText }</span>
+          </div>
         </div>
       </div>
+
     </div>
   );
   
