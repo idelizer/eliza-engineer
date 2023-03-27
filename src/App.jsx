@@ -105,7 +105,7 @@ function App() {
       <div class="grid grid-cols-2 place-items-center mt-10 px-6">
         <div>
           <h1>Hi, I'm Eliza.</h1>
-          <h2 class="text-2xl mt-10">I'm a full-stack software engineer.</h2>
+          <h2 class="text-2xl m-10">I'm a full-stack software engineer.</h2>
         </div>
 
         <div>
@@ -132,8 +132,12 @@ function App() {
         </div>
         
         <div class="mx-0 sm:mx-20">
-          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
-            <div class="ml-20">
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-around mt-10">
+            <div class="m-10 basis-1/2">
+              <h2 class="text-2xl">Breadventure</h2>
+              <p class="mt-6">Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
+            </div>
+            <div class="m-10">
               <a href="http://breadventure.eliza.engineer/">
                 <img src={breadventure} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
               </a>
@@ -145,28 +149,29 @@ function App() {
                 Github
               </a>
             </div>
-            <div class="m-10 basis-1/2">
-              <h2 class="text-2xl">Breadventure</h2>
-              <p class="mt-6">Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
-            </div>
           </div>
 
-          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
-            <div class="ml-20">
-              <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
-              <a href='https://github.com/camphoric' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
-                Github
-              </a>
-            </div>
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-around mt-10">
             <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Camphoric</h2>
               <p class="mt-6">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
               <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
             </div>
+            <div class="m-10">
+              <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
+              <a href='https://github.com/camphoric' class='block mt-10 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                Github
+              </a>
+            </div>
           </div>
 
-          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-center gap-32 mt-10">
-            <div class="ml-20">
+          <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-around mt-10">
+            <div class="m-10 basis-1/2">
+              <h2 class="text-2xl">Marquee</h2>
+              <p class="mt-6">Marquee is a character counter that tracks how many letters you will need transitioning your marquee layout between dates. You enter the characters currently displayed on your marquee, then the characters you intend to display next. This app then gives you the difference in characters.</p>
+              <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work, a non profit venue for live folk music, mentioned how much easier it would be to change out the marquee display with a simple character counter. This was my first project using React and CSS to animate.</p>
+            </div>
+            <div class="m-10">
               <a href="https://marquee.eliza.engineer/">
                 <img src={marquee} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
               </a>
@@ -176,11 +181,6 @@ function App() {
               <a href='https://github.com/idelizer/marquee' class='block mt-6 px-4 py-3 rounded-lg text-lg tracking-wide text-center bg-white transition-colors duration-200 ease-out hover:bg-gray hover:text-white transform focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                 Github
               </a>
-            </div>
-            <div class="m-10 basis-1/2">
-              <h2 class="text-2xl">Marquee</h2>
-              <p class="mt-6">Marquee is a character counter that tracks how many letters you will need transitioning your marquee layout between dates. You enter the characters currently displayed on your marquee, then the characters you intend to display next. This app then gives you the difference in characters.</p>
-              <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work, a non profit venue for live folk music, mentioned how much easier it would be to change out the marquee display with a simple character counter. This was my first project using React and CSS to animate.</p>
             </div>
           </div>
         </div>
@@ -194,11 +194,6 @@ function App() {
             <img src={ leafright } class="icon"></img>
         </div>
         <div class="grid grid-cols-2 place-items-center m-10">
-          <div class="w-3/4">
-              <p class="my-4">I am a creator. My educational background is in music, and over my lifetime, I have taught myself many art forms.  I am happiest when I am creating.</p>
-              <p class="my-4">Programming has been the natural next step in this progression. I view coding is a form of creative expression that allows me to build intuitive tools for learning, teaching, and exploring the world. I am particularly interested in using technology to connect smaller communities, both local and online. I love the intersection between technology and cognition, including how people use their tools and what makes them accessible. I love the process behind analyzing details that go into every individual’s decision and watching those decisions snowball into data about human behavior. For these reasons, I have found my place within the tech space.</p>
-              <p class="my-4">I am thrilled to be transitioning to a career in tech as a software engineer. I completed a programming bootcamp for that gave me a strong foundation in full stack technologies and am eager to apply those skills in a professional setting.</p>
-            </div>
           <div class="w-2/3 grid grid-rows-2">
             <div>
               <p class="text-2xl">Eliza Cantwell</p>
@@ -213,6 +208,11 @@ function App() {
                 <SiGithub class="icon"/>
               </a> 
             </div>
+          </div>
+          <div class="w-3/4">
+            <p class="my-4">I am a creator. My educational background is in music, and over my lifetime, I have taught myself many art forms.  I am happiest when I am creating.</p>
+            <p class="my-4">Programming has been the natural next step in this progression. I view coding is a form of creative expression that allows me to build intuitive tools for learning, teaching, and exploring the world. I am particularly interested in using technology to connect smaller communities, both local and online. I love the intersection between technology and cognition, including how people use their tools and what makes them accessible. I love the process behind analyzing details that go into every individual’s decision and watching those decisions snowball into data about human behavior. For these reasons, I have found my place within the tech space.</p>
+            <p class="my-4">I am thrilled to be transitioning to a career in tech as a software engineer. I completed a programming bootcamp for that gave me a strong foundation in full stack technologies and am eager to apply those skills in a professional setting.</p>
           </div>
         </div>
       </div>
