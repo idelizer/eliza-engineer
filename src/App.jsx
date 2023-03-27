@@ -105,7 +105,7 @@ function App() {
       <div class="grid grid-cols-2 place-items-center mt-10 px-6">
         <div>
           <h1>Hi, I'm Eliza.</h1>
-          <p>I'm a full-stack software engineer</p>
+          <h2 class="text-2xl mt-10">I'm a full-stack software engineer.</h2>
         </div>
 
         <div>
@@ -179,7 +179,8 @@ function App() {
             </div>
             <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Marquee</h2>
-              <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work (a non profit venue for live folk music called the link:Freight and Salvage), mentioned how much easier it would be to change out the marquee display with a simple character counter. I also learned react animations from a link:blog post from a previous Hackbright graduate.</p>
+              <p class="mt-6">Marquee is a character counter that tracks how many letters you will need transitioning your marquee layout between dates. You enter the characters currently displayed on your marquee, then the characters you intend to display next. This app then gives you the difference in characters.</p>
+              <p class="mt-6">This project was an exercise in my favorite aspect of coding: you can create any tool you can imagine. I built marquee after hearing from a manager at my current work, a non profit venue for live folk music, mentioned how much easier it would be to change out the marquee display with a simple character counter. This was my first project using React and CSS to animate.</p>
             </div>
           </div>
         </div>
@@ -192,11 +193,11 @@ function App() {
             <h1 id="about" class="mx-2">About</h1>
             <img src={ leafright } class="icon"></img>
         </div>
-        <div class="grid grid-cols-2 gap-6 place-items-center my-10">
-          <div class="w-2/3">
-              <p>
-                As a Bay Area Native, my mission is to bridge local artistic communities and the tech world. Pre-pandemic I was working in the live music industry as a server in a folk venue and as a music teacher. This last year, I changed as my communities changed. Hackbright became the clear next step in facilitating my goals, and allowing me to problem solve at new levels. To me, coding is a freedom of expression, allowing me to make intuitive tools for learning, exploring, and teaching, as well as connecting smaller communities, both local and online. I love to build to things. With coding, I can turn around and give back to those artistic communities I’ve come from.
-              </p>
+        <div class="grid grid-cols-2 place-items-center m-10">
+          <div class="w-3/4">
+              <p class="my-4">I am a creator. My educational background is in music, and over my lifetime, I have taught myself many art forms.  I am happiest when I am creating.</p>
+              <p class="my-4">Programming has been the natural next step in this progression. I view coding is a form of creative expression that allows me to build intuitive tools for learning, teaching, and exploring the world. I am particularly interested in using technology to connect smaller communities, both local and online. I love the intersection between technology and cognition, including how people use their tools and what makes them accessible. I love the process behind analyzing details that go into every individual’s decision and watching those decisions snowball into data about human behavior. For these reasons, I have found my place within the tech space.</p>
+              <p class="my-4">I am thrilled to be transitioning to a career in tech as a software engineer. I completed a programming bootcamp for that gave me a strong foundation in full stack technologies and am eager to apply those skills in a professional setting.</p>
             </div>
           <div class="w-2/3 grid grid-rows-2">
             <div>

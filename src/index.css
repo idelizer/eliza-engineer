@@ -94,7 +94,7 @@ button:focus-visible {
 }
 
 #headshot {
-  max-width: 90%;
+  max-width: 80%;
   /* height: auto;
   width: auto\9; ie8 */
   object-fit: cover;
