@@ -135,7 +135,8 @@ function App() {
           <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-around mt-10">
             <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Breadventure</h2>
-              <p class="mt-6">Breadventure is a solo project, allowing me to test how much I can accomplish when I set my mind to it. Projects will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project makes all the difference. This project showed me the scope of planning a complete product, and helped me become comfortable with making every decision that would impact my final version. </p>
+              <p class="mt-6">Breadventure is my capstone project from the coding bootcamp, Hackbright Academy. It is a full stack web app that I built to track bakers’ experiments in sourdough bread-making. Users can create an account and enter details about their recipes, such as timeframes around letting the dough ferment and graphical breakdown of ingredients used. You can view a walkthrough video of the user experience <a class="underline" href="https://www.youtube.com/watch?v=hXKvg4zVI0E">here</a>.</p>
+              <p class="mt-6">This was a solo project, showing me how much I could accomplish when I set my mind to it. I built it step by step, watching the features come together one at at time. I learned that builds will change as you go, no matter how much planning you have, so be adaptable and flexible. That said, this is no excuse to not plan at all; in fact, having a roadmap or at least well organized vision for a project made all the difference for me. </p>
             </div>
             <div class="m-10">
               <a href="http://breadventure.eliza.engineer/">
@@ -154,8 +155,8 @@ function App() {
           <div class="card relative rounded-lg overflow-hidden shadow-lg flex items-center justify-around mt-10">
             <div class="m-10 basis-1/2">
               <h2 class="text-2xl">Camphoric</h2>
-              <p class="mt-6">Volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. Opportunity to work with world class software engineers.</p>
-              <p>What I learned: I learned the process behind architectural planning, database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experience, when teammates bring ideas to the table, what it’s like to weight them, then execute a plan. The flow of how to break down problems larger than 1 person can accomplish, and the value of multiple inputs. I learned firsthand that being a beginner has a place at the table too, since I sometimes saw things that the experienced engineers didn’t, or could point out when the code was unclear.</p>
+              <p class="mt-6">Working with Camphoric was a volunteer opportunity with an open source project affiliated with my favorite local music non-profit, creating the registration system for music camps in California. The site includes features that manage users registration for camps, their payments, and lodging, as well as generating reports on data. It was a wonderful opportunity to work with world class software engineers as well.</p>
+              <p class="mt-6">For this project, I learned the process behind architectural planning and database design when working with a team. This was my first experience seeing what it is like to balance difference viewpoints and experiences, what it’s like to weight them, and then execute a plan. I learned firsthand that being a beginner has a place at the table, since I saw things that the experienced engineers overlooked or pointed out when the code was unclear.</p>
             </div>
             <div class="m-10">
               <img src={camp} class="project-icon w-full transition-all duration-200 ease-out" alt="Breadventure"></img>
